@@ -5,7 +5,7 @@ public class Kuku {
 		int uhen = new java.util.Random().nextInt(10);
 		int sahen = new java.util.Random().nextInt(10);
 		int ans = uhen*sahen;
-		System.out.println(uhen+"×"+sahen+"＝？？？");
+		System.out.println(sahen+"×"+uhen+"＝？？？");
 		
 		int input = new java.util.Scanner(System.in).nextInt();
 		
@@ -14,7 +14,7 @@ public class Kuku {
 		}
 		else {
 			System.out.println("は？違う。");
-			System.out.println(uhen+"×"+sahen+"＝"+ans);
+			System.out.println(sahen+"×"+uhen+"＝"+ans);
 		}
 	}
 
