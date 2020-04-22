@@ -2,10 +2,11 @@
 public class Kuku {
 
 	public static void main(String[] args) {
-		int uhen = new java.util.Random().nextInt(9)+1;
-		int sahen = new java.util.Random().nextInt(9)+1;
-		int ans =sahen*uhen;
-		System.out.println(sahen+"×"+uhen+"＝？？？");
+		int num1 = new java.util.Random().nextInt(9)+1;
+		int num2 = new java.util.Random().nextInt(9)+1;
+		int ans = num1 * num2;
+		
+		System.out.println(num1+"×"+num2+"＝？？");
 		
 		int input = new java.util.Scanner(System.in).nextInt();
 		
@@ -14,7 +15,7 @@ public class Kuku {
 		}
 		else {
 			System.out.println("は？違う。");
-			System.out.println(sahen+"×"+uhen+"＝"+ans);
+			System.out.println(num1+"×"+num2+"＝"+ans);
 		}
 	}
 
