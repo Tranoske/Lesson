@@ -10,6 +10,6 @@ public class Keisan {
 		int input1 = new java.util.Scanner(System.in).nextInt();
 		System.out.println(input1+"+□をにゅーりょく");
 		int input2 = new java.util.Scanner(System.in).nextInt();
-		System.out.println("答えは"+(input1 + input2)+"やね。");
+		System.out.println((input1 + input2)+"やね。");
 	}
 }
