@@ -2,9 +2,9 @@
 public class Kuku {
 
 	public static void main(String[] args) {
-		int uhen = new java.util.Random().nextInt(10);
-		int sahen = new java.util.Random().nextInt(10);
-		int ans = uhen*sahen;
+		int uhen = new java.util.Random().nextInt(9)+1;
+		int sahen = new java.util.Random().nextInt(9)+1;
+		int ans =sahen*uhen;
 		System.out.println(sahen+"×"+uhen+"＝？？？");
 		
 		int input = new java.util.Scanner(System.in).nextInt();
