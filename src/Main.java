@@ -27,9 +27,9 @@ public class Main {
 		int n = (int)3.0;
 		String s = "べすと" + 3;
 		
-		double kokugo = 70;
-		double sansu = 75;
-		double heikin = (kokugo + sansu) /2;
+		int kokugo = 70;
+		int sansu = 75;
+		double heikin = (kokugo + sansu) /2.0;
 		System.out.println(heikin);
 	}
 }
