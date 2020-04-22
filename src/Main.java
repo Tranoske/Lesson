@@ -2,6 +2,7 @@
 public class Main {
 
 	public static void main(String[] args) {
+		/*
 		double p = 3.14;
 		System.out.println("円周率は"+p+"です。");
 		
@@ -31,5 +32,9 @@ public class Main {
 		int sansu = 75;
 		double heikin = (kokugo + sansu) /2.0;
 		System.out.println(heikin);
+		*/
+		int num1 = 3;
+		int num2 = 5;
+		System.out.println("足し算の結果は"+(num1+num2));
 	}
 }
