@@ -37,7 +37,6 @@ public class Hairetsu3 {
 			}
 		}
 		System.out.println(max);
-
 	}
 
 }
