@@ -2,10 +2,10 @@
 public class Hairetsu2 {
 
 	public static void main(String[] args) {
-		int[] data = {5,8,7,9,6};
-		for(int value:data) {
-			System.out.println(value);
-		}
+//		int[] data = {5,8,7,9,6};
+//		for(int value:data) {
+//			System.out.println(value);
+//		}
 
 //		int[] prices = {100,200,150};
 //
@@ -19,10 +19,11 @@ public class Hairetsu2 {
 //			System.out.println(value);
 //		}
 //		
-//		String[] names = {"コーラ","コーヒー","水"};
-//		for(String value:names) {
-//			System.out.println(value);
-//		}
+		String[] names = {"コーラ","コーヒー","水"};
+		for(String value:names) {
+			System.out.print(value+"は");
+			System.out.println(value.length()+"文字");
+		}
 //		
 //		int[] points = {80,90,60,70};
 //		int sum = 0;

@@ -2,12 +2,17 @@
 public class Hairetsu {
 
 	public static void main(String[] args) {
+		
 //		int[] scores;
 //		scores = new int[5];
 //		
 //		scores[0] = 20;
 //		System.out.println(scores.length);
 //		System.out.println(scores[0]);
+		
+		String str="あいう";
+		System.out.println(str.length());
+		
 //	
 //		int[] prices = {100,200,150};
 //
@@ -37,12 +42,12 @@ public class Hairetsu {
 //			}
 //		}
 //		System.out.println("70点以上の科目は"+count+"つ");
-		
-		int[] seq = {0,1,0,2,3,0};
-		for(int i=0; i<seq.length;i++){
-			char[] base ={'A','T','G','C'};
-			System.out.println(base[seq[i]]);
-		}
+//		
+//		int[] seq = {0,1,0,2,3,0};
+//		for(int i=0; i<seq.length;i++){
+//			char[] base ={'A','T','G','C'};
+//			System.out.println(base[seq[i]]);
+//		}
 	}
 
 }
