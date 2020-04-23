@@ -19,7 +19,7 @@ public class Loop2 {
 		}
 		System.out.println();
 		//10以下の偶数
-		for(int i=2;i<=10;i++) {
+		for(int i=2;i<=10;i+=2) {
 			System.out.print(i);
 			System.out.print(" ");
 		}
