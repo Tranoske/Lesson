@@ -1,7 +1,17 @@
 
 public class Hairetsu2 {
+	
+	public static void showKion(double ondo) {
+		System.out.println(ondo+"ど");
+	}
 
 	public static void main(String[] args) {
+		double[] kions = {15,5,20,1,18,3};
+		for(double k:kions) {
+			showKion(k);
+		}
+		
+		
 //		int[] data = {5,8,7,9,6};
 //		for(int value:data) {
 //			System.out.println(value);
