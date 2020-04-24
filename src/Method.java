@@ -25,8 +25,50 @@ public class Method {
 			yello(value);
 		}
 		
+		if (isGuusu(2)) {
+			System.out.println("偶数やね");
+		}else {
+			System.out.println("奇数やね");
+		}
+		
+		System.out.println(getTimeName(2));
+		
+		int[] nums = {5,8,9,2};
+		printArray(nums);
+		
+		String data = "apple,orange,suica,lemon";
+		String[] fruits = data.split(",");
+		System.out.println(fruits[0]);
+		System.out.println(fruits[1]);
+		System.out.println(fruits[2]);
 		
 	}
+	
+	public static void printArray(int[] array) {
+		for(int num:array) {
+			System.out.println(num);
+		}
+	}
+	
+	public static String getTimeName(int hour) {
+		if (hour <= 11 && hour >= 0) {
+			return "午前";
+		}
+		if (hour >= 12 && hour <= 24){
+			return "午後";
+		}
+			return "エラー";
+	}
+	
+	public static boolean isGuusu(int num) {
+		//return (num % 2==0);
+		if(num % 2 ==0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
 	public static void test (int x) {
 		x = 20;
 	}
@@ -55,6 +97,5 @@ public class Method {
 		
 		System.out.println("🤜🤛もちろん"+name+age+"歳🤜🤛");
 	}
-	
 	
 }
