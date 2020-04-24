@@ -1,9 +1,15 @@
+import java.util.Arrays;
 
 public class Hairetsu3 {
 
 	public static void main(String[] args) {
 		//int numsに8,5,9,2,4
 		int[] nums= {8,5,9,2,4};
+		
+		Arrays.sort(nums);
+		//10化
+		Arrays.fill(nums, 10);
+		
 		//全表示
 		System.out.print("numsの中身は：");
 		for(int value:nums) {
