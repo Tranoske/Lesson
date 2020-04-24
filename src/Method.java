@@ -42,6 +42,14 @@ public class Method {
 		System.out.println(fruits[1]);
 		System.out.println(fruits[2]);
 		
+		int[] tesuto = {1,2,3,4,5};
+		
+		System.out.println(getLast(tesuto));
+	}
+	
+	public static int getLast(int[] array) {
+		int last = array[array.length-1];
+		return last;
 	}
 	
 	public static void printArray(int[] array) {
