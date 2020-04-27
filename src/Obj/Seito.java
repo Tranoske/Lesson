@@ -16,7 +16,7 @@ public class Seito {
 	}
 	
 	public double heikin() {
-		double heikin = goukei()/3;
+		double heikin = goukei()/3.0;
 		return heikin;
 	}
 }
