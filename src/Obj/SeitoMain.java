@@ -11,9 +11,9 @@ public class SeitoMain {
 		
 		tnk.show();
 		
-		System.out.println("合計:"+tnk.goukei());
+		System.out.println("合計:"+tnk.goukei()+"点");
 		
-		System.out.println("平均:"+tnk.heikin());
+		System.out.println("平均:"+tnk.heikin()+"点");
 
 	}
 
