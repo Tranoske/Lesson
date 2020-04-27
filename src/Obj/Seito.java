@@ -7,16 +7,16 @@ public class Seito {
 	int syakai;
 	
 	public void show() {
-		System.out.println(name+"　国語"+kokugo+"点　算数"+sansu+"点　社会"+syakai+"点");
+		System.out.println(this.name+"　国語"+this.kokugo+"点　算数"+this.sansu+"点　社会"+this.syakai+"点");
 	}
 	
 	public int goukei() {
-		int goukei = kokugo+sansu+syakai;
+		int goukei = this.kokugo+this.sansu+this.syakai;
 		return goukei;
 	}
 	
 	public double heikin() {
-		double heikin = goukei()/3.0;
+		double heikin =this.goukei()/3.0;
 		return heikin;
 	}
 }
