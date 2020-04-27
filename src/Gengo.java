@@ -20,7 +20,7 @@ public class Gengo {
 		}else if(gengou == 3) {
 			seireki = 2019+nen-1;
 		}else {
-			
+			seireki = 0;
 		}
 		
 		
@@ -36,7 +36,7 @@ public class Gengo {
 		}else if(gengou == 3) {
 			name = "令和";
 		}else {
-			
+			name = "エラー";
 		}
 		return name;
 	}
