@@ -3,6 +3,8 @@ package Obj;
 public class Main {
 
 	public static void main(String[] args) {
+		Teacher ti = new Teacher();
+		ti.show();
 		
 		Hiduke hi = new Hiduke();
 		hi.tsuki = 4;

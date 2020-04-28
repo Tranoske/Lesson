@@ -12,7 +12,6 @@ public class Main {
 		
 		Hero h = new Hero();
 		h.name = "Chara";
-		h.hp = 100;
 		h.sword = s;
 		System.out.println("名前は既に決められています:"+h.name);
 		System.out.println("そうび:"+h.sword.name);
