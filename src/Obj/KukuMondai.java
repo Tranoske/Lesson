@@ -17,9 +17,7 @@ public class KukuMondai {
 			System.out.println("せいかい！");
 		}else {
 			System.out.println("は？違う。");
-			System.out.println(kotae);
+			System.out.println(num1*num2);
 		}
 	}
-	
-	
 }
