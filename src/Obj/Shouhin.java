@@ -4,6 +4,10 @@ public class Shouhin {
 	String name;
 	int price;
 	
+	public Shouhin(String name, int price) {
+		this.name = name;
+		this.price = price;
+	}
 	public void show() {
 		System.out.println(this.name+" "+this.price+"円");
 	}

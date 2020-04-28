@@ -4,7 +4,12 @@ public class Hiduke {
 	int tsuki;
 	int hi;
 	
+	public Hiduke(int tsuki, int hi) {
+		this.tsuki = tsuki;
+		this.hi = hi;
+	}
+	
 	public void show() {
-		System.out.println(tsuki+"月"+hi+"日");
+		System.out.println(this.tsuki+"月"+this.hi+"日");
 	}
 }

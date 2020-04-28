@@ -5,16 +5,25 @@ public class Teacher {
 	int nen;
 	int kumi;
 	
-	public Teacher(){
-		name = "田中、コードネームtnk。";
-		nen = 1;
-		kumi = 1;
+	public Teacher(String name, int nen, int kumi) {
+		this.name = name;
+		this.nen = nen;
+		this.kumi = kumi;
 	}
+	
+	public Teacher(String name) {
+		this.name = name;
+		this.nen = 0;
+		this.kumi = 0;
+		
+	}
+	
+	
 	public void show() {
 		if(this.nen == 0 && this.kumi ==0){
-			System.out.println(this.name+" 担任なし");
+			System.out.println("コードネーム"+this.name+" 担任なし");
 		}else {
-			System.out.println(this.name+" "+this.nen+"年"+this.kumi+"組担任");
+			System.out.println("コードネーム"+this.name+" "+this.nen+"年"+this.kumi+"組担任");
 		}
 	}
 }

@@ -3,25 +3,26 @@ package Obj;
 public class Main {
 
 	public static void main(String[] args) {
-		Teacher ti = new Teacher();
+		Teacher ti = new Teacher("TNK",1,1);
 		ti.show();
 		
-		Hiduke hi = new Hiduke();
-		hi.tsuki = 4;
-		hi.hi = 27;
+		Teacher ti2 = new Teacher("田中",2,1);
+		ti2.show();
+		
+		Teacher ti3 = new Teacher("YMD",3,2);
+		ti3.show();
+		
+		Teacher ti4 = new Teacher("山田");
+		ti4.show();
+		
+		Hiduke hi = new Hiduke(4,27);
 		hi.show();
 		
-		Hiduke hi2 = new Hiduke();
-		hi2.tsuki = 5;
-		hi2.hi = 7;
+		Hiduke hi2 = new Hiduke(5,7);
 		hi2.show();
 		
-		Nichiji ni = new Nichiji();
-		ni.tsuki = 4;
-		ni.hi = 28;
-		ni.ji = 13;
-		ni.hun = 30;
-		ni.showJikan();
+		Nichiji ni = new Nichiji(4,28,13,30);
+		ni.show();
 		
 		DenshiMoney m = new DenshiMoney();
 		m.kingaku=1000;
@@ -38,9 +39,7 @@ public class Main {
 		System.out.println("残高:"+m.kingaku+"円");
 		System.out.println(m.point+"ポイント");
 		
-		Sankaku s = new Sankaku();
-		s.teihen = 2;
-		s.takasa = 1;
+		Sankaku s = new Sankaku(2,1);
 		s.menseki();
 		
 		En e = new En();
@@ -48,9 +47,7 @@ public class Main {
 		e.menseki();
 		e.enshu();
 		
-		Shouhin syo = new Shouhin();
-		syo.name = "りんご";
-		syo.price = 100;
+		Shouhin syo = new Shouhin("りんご",100);
 		syo.show();
 		syo.showtax();
 		
@@ -59,9 +56,8 @@ public class Main {
 		age.shouhin = syo;
 		age.show();
 		
-		Shouhin msyo = new Shouhin();
-		msyo.name = "みかん";
-		msyo.price = 150;
+		Shouhin msyo = new Shouhin("みかん",150);
+		
 		
 		Uriage mage = new Uriage();
 		mage.shouhin = msyo;
