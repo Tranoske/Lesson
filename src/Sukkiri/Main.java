@@ -3,15 +3,12 @@ package Sukkiri;
 public class Main {
 
 	public static void main(String[] args) {
-		String str = new String("Hello, Gaster.");
+		String str = new String("Gaster.");
 		System.out.println(str);
 		
-		Sword s = new Sword();
-		s.name="ほんもののナイフ";
-		s.damage = 10;
+		Sword s = new Sword("ほんもののナイフ",10);
 		
-		Hero h = new Hero();
-		h.name = "Chara";
+		Hero h = new Hero("Frisk");
 		h.sword = s;
 		System.out.println("名前は既に決められています:"+h.name);
 		System.out.println("そうび:"+h.sword.name);

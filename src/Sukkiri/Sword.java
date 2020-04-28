@@ -5,4 +5,9 @@ public class Sword {
 	int damage;
 	Sword sword;
 	
+	public Sword(String name,int dmg) {
+		this.name = name;
+		this.damage = dmg;
+	}
+	
 }
