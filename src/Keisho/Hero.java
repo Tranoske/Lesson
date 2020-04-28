@@ -1,24 +1,14 @@
-package Sukkiri;
+package Keisho;
 
 public class Hero {
-	String name;
-	int hp;
-	Sword sword;
-	
-	public Hero(String name) {
-		this.hp = 20;
-		this.name = name;
-	}
-	public Hero() {
-		this.hp =1000;
-		this.name = "Chara";
-	}
+	String name = "Chara";
+	int hp=100;
 	
 	public void attack(Matango m) {
-		m.hp -= sword.damage;
-		System.out.println(this.name+"の攻撃！");
-		System.out.println(sword.damage+"ダメージ！");
-		System.out.println("残りHPは"+m.hp);
+		m.hp -= 5;
+		System.out.println(this.name+"の攻撃");
+		System.out.println("5のダメージ！");
+		System.out.println("残り:"+m.hp);
 	}
 	
 	public void sleep() {

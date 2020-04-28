@@ -16,6 +16,13 @@ public class Main {
 		hi2.hi = 7;
 		hi2.show();
 		
+		Nichiji ni = new Nichiji();
+		ni.tsuki = 4;
+		ni.hi = 28;
+		ni.ji = 13;
+		ni.hun = 30;
+		ni.showJikan();
+		
 		DenshiMoney m = new DenshiMoney();
 		m.kingaku=1000;
 		m.point=0;
