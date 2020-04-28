@@ -6,6 +6,13 @@ public class Seito {
 	int sansu;
 	int syakai;
 	
+	public Seito(String name, int kokugo, int sansu, int syakai) {
+		this.name = name;
+		this.kokugo = kokugo;
+		this.sansu = sansu;
+		this.syakai = syakai;
+	}
+
 	public void show() {
 		System.out.println(this.name+"　国語"+this.kokugo+"点　算数"+this.sansu+"点　社会"+this.syakai+"点");
 	}
