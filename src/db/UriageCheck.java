@@ -17,10 +17,11 @@ public class UriageCheck {
 		
 		
 		UriageDAO udao = new UriageDAO();
-		Uriage u = udao.FindBySid(ipt);
+		ArrayList<Uriage> ulist = udao.FindBySid(ipt);
+		for(Uriage u:ulist) {
 		System.out.print(u.getHi()+" ");
 		System.out.println(u.getKosu());
-		
+		}
 	}
 
 }
