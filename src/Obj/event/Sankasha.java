@@ -5,7 +5,13 @@ public class Sankasha {
 	private int age;
 	
 	
-	public Sankasha(String name, int age) {
+	public Sankasha(String name, int age) throws SankashaException{
+		if(age < 0) {
+			throw new SankashaException("その年齢は入力できないね。");
+		}
+		if(name.equals("")) {
+			throw new SankashaException("名前を入れてね。");
+		}
 		this.name = name;
 		this.age = age;
 	}
