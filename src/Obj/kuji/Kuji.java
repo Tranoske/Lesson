@@ -1,4 +1,4 @@
-package Obj;
+package Obj.kuji;
 
 public class Kuji {
 	int no;

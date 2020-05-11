@@ -1,11 +1,7 @@
 package Keisho;
 
-public class Hero {
-	String name = "Chara";
-	int hp=100;
-	
-	public Hero(){
-		
+public class Hero extends Character {	
+	public Hero() {
 	}
 	
 	public Hero(String name) {
@@ -18,6 +14,23 @@ public class Hero {
 		System.out.println(this.name+"の攻撃");
 		System.out.println("5のダメージ！");
 		System.out.println("残り:"+m.hp);
+	}
+	
+	public String toString() {
+		return "名前："+this.name;
+	}
+	
+	public boolean equals(Object o) {
+		if(this == o) {
+			return true;
+		}
+		if(o instanceof Hero) {
+			Hero h = (Hero)o;
+			if(this.name.equals(h.name)) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	public void sleep() {
@@ -34,10 +47,5 @@ public class Hero {
 		this.hp -= 5;
 		System.out.println(this.name+"は転んだ！");
 		System.out.println("5のダメージ！");
-	}
-	public void run() {
-		System.out.println(this.name+"は逃げ出した！");
-		System.out.println("GAME OVER");
-		System.out.println("最終HPは"+this.hp+"でした。");
 	}
 }

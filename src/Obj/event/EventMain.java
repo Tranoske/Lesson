@@ -9,7 +9,6 @@ public class EventMain {
 		e.add(new Sankasha("山本",35));
 		
 		e.show();
-
+		
 	}
-
 }

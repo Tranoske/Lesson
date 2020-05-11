@@ -1,10 +1,10 @@
-package Obj;
+package Obj.seito;
 
 public class Seito {
-	String name;
-	int kokugo;
-	int sansu;
-	int syakai;
+	private String name;
+	private int kokugo;
+	private int sansu;
+	private int syakai;
 	
 	public Seito(String name, int kokugo, int sansu, int syakai) {
 		this.name = name;

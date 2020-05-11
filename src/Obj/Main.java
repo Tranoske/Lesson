@@ -1,5 +1,8 @@
 package Obj;
 
+import Obj.zukei.En;
+import Obj.zukei.Sankaku;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -25,27 +28,28 @@ public class Main {
 		ni.show();
 		
 		DenshiMoney m = new DenshiMoney();
-		m.kingaku=1000;
-		m.point=0;
-		System.out.println("残高:"+m.kingaku+"円");
-		System.out.println(m.point+"ポイント");
-		
 		m.charge(1000);
 		m.buy(1000);
-		System.out.println("残高:"+m.kingaku+"円");
-		System.out.println(m.point+"ポイント");
+		
+		System.out.println("残高:"+m.getKingaku()+"円");
+		System.out.println(m.getPoint()+"ポイント");
+		
+
+		System.out.println("残高:"+m.getKingaku()+"円");
+		System.out.println(m.getPoint()+"ポイント");
 		
 		m.change();
-		System.out.println("残高:"+m.kingaku+"円");
-		System.out.println(m.point+"ポイント");
+		System.out.println("残高:"+m.getKingaku()+"円");
+		System.out.println(m.getPoint()+"ポイント");
 		
 		Sankaku s = new Sankaku(2,1);
 		s.menseki();
 		
-		En e = new En();
-		e.hankei = 10;
+		En e = new En(10);
 		e.menseki();
 		e.enshu();
+		
+		Book b = new Book("それから",500,"夏目漱石");
 		
 		Shouhin syo = new Shouhin("りんご",100);
 		syo.show();
@@ -54,6 +58,7 @@ public class Main {
 		Uriage age = new Uriage();
 		age.kosu = 5;
 		age.shouhin = syo;
+		age.shouhin = b;
 		age.show();
 		
 		Shouhin msyo = new Shouhin("みかん",150);

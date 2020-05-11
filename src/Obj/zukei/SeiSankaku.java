@@ -1,4 +1,4 @@
-package Obj;
+package Obj.zukei;
 
 public class SeiSankaku extends Sankaku{
 	

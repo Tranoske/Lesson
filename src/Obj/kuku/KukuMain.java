@@ -1,4 +1,4 @@
-package Obj;
+package Obj.kuku;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package Obj;
+package Obj.seito;
 
 public class Chugakusei extends Seito {
 	int eigo;
@@ -8,11 +8,12 @@ public class Chugakusei extends Seito {
 	}
 	
 	public void show() {
-		System.out.println(super.name+"　国語"+super.kokugo+"点　算数"+super.sansu+"点　社会"+super.syakai+"点　英語"+this.eigo+"点");
+		super.show();
+		System.out.println("点　英語"+this.eigo+"点");
 	}
 	
 	public int goukei() {
-		int goukei = super.kokugo+super.sansu+super.syakai+this.eigo;
+		int goukei = super.goukei()+this.eigo;
 		return goukei;
 	}
 	

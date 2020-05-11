@@ -1,10 +1,12 @@
-package Obj;
+package Obj.seito;
 
 import java.util.ArrayList;
 
 public class SeitoMain {
 
 	public static void main(String[] args) {
+		Seito s = new Chugakusei("田中",10,10,10,10);
+		System.out.println(s.goukei());
 		int total = 0;
 		ArrayList<Chugakusei> cs = new ArrayList<Chugakusei>();
 		cs.add(new Chugakusei("田中",80,70,50,9));

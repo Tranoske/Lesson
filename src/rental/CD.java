@@ -9,8 +9,7 @@ public class CD extends Item{
 
 	@Override
 	public int getPrice() {
-		return (super.days -1) * 100 + 300;
+		return (super.getDays() -1) * 100 + 300;
 	}
 	
-
 }

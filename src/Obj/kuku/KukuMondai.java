@@ -1,4 +1,4 @@
-package Obj;
+package Obj.kuku;
 
 public class KukuMondai {
 	int num1;
