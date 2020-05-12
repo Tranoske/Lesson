@@ -1,0 +1,4 @@
+@startuml
+Kimura -> Araki
+Kimura -> Mori
+@enduml

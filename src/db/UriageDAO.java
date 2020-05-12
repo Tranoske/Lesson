@@ -100,4 +100,32 @@ public class UriageDAO {
 			System.out.println("INSERTエラー"+e.getMessage());
 		}
 	}
+	public void delete(int uid) {
+		try(Connection con = DriverManager.getConnection(URL,USER,PASS);) {
+			String sql = "DELETE FROM uriage WHERE uid = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, uid);
+			stmt.executeUpdate();
+			stmt.close();
+			
+		} catch (SQLException e) {
+			System.out.println("DELETEエラー"+e.getMessage());
+		}
+	}
+	public void update(Uriage u) {
+		try(Connection con = DriverManager.getConnection(URL,USER,PASS);) {
+			String sql = "UPDATE uriage SET sid = ?, kosu = ?, hi = ? WHERE uid = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, u.getSid());
+			stmt.setInt(2, u.getKosu());
+			stmt.setDate(3, u.getHi());
+			stmt.setInt(4, u.getUid());
+			stmt.executeUpdate();
+
+			stmt.close();
+
+		} catch (SQLException e) {
+			System.out.println("UPDATEエラー"+e.getMessage());
+		}
+	}
 }
