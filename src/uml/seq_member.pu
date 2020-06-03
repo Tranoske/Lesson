@@ -1,0 +1,14 @@
+@startuml
+actor ユーザ
+ユーザ -> MemberMain:実行
+MemberMain -> MemberDAO:生成
+MemberMain -> MemberDAO:findAll()
+MemberDAO -> Member:生成
+MemberDAO --> MemberMain:ArrayList<Member>
+MemberMain -> ユーザ:一覧表示
+ユーザ -> MemberMain:mid入力
+MemberMain -> MemberDAO:findByMid()
+MemberDAO -> Member:生成
+MemberDAO --> MemberMain:Member
+MemberMain -> ユーザ:住所表示
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+package rental{
+	class Item{
+		- <<get>> name
+		- <<get>> days
+		+ toString()
+		+ getPrice()
+	}
+	class CD{
+		+ getPrice()
+	}
+	class Book{
+		+ getPrice()
+	}
+	class Rental{
+		+ add()
+		+ show()
+		+ getGoukei()
+	}
+	class RentalMain{
+		+ main()
+	}
+
+	Item <|-- CD
+	Item <|-- Book
+	Rental"1" *- "*"Item : {BookとCD}
+	RentalMain -> Rental
+}
+@enduml

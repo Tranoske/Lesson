@@ -1,0 +1,18 @@
+@startuml
+skinparam DefaultFontName うずらフォント
+scale 1.5
+title Event sequence
+caption タイトルシーケンス図
+EventMain -[#green]> Event:生成
+loop
+EventMain -> Sankasha:生成
+EventMain -> Event:add()
+end
+EventMain -[#green]> Event:show()
+loop
+Event -> Sankasha:getName()
+Sankasha --> Event:name
+Event -> Sankasha:getAge()
+Sankasha --> Event:Age
+end
+@enduml

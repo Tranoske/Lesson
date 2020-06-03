@@ -1,0 +1,12 @@
+@startuml
+RentalMain -> Rental:new
+RentalMain -> Book:new
+RentalMain -> Rental:add()
+RentalMain -> CD:new
+RentalMain -> Rental:add()
+
+RentalMain -> Rental:show()
+RentalMain -> Rental:getGoukei()
+
+Rental --> RentalMain:sum
+@enduml

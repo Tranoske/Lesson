@@ -1,6 +1,11 @@
 @startuml
+skinparam DefaultFontName HG行書体
+scale 1.5
 left to right direction
 actor 購入者
+note bottom of 購入者
+	会員登録済み
+end note
 actor 販売者
 rectangle ショッピングサイト{
 	購入者 --> (検索する)

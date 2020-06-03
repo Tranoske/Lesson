@@ -8,9 +8,9 @@ public class Gengo {
 		System.out.println("年を入力");
 		int nen = new java.util.Scanner(System.in).nextInt();
 		System.out.println(GengouName(gengou)+nen+"年は西暦"+getSeireki(gengou,nen)+"年");
-		
+
 	}
-	
+
 	public static int getSeireki(int gengou, int nen) {
 		int seireki = 0;
 		if(gengou == 1) {
@@ -22,11 +22,11 @@ public class Gengo {
 		}else {
 			seireki = 0;
 		}
-		
-		
+
+
 		return seireki;
 	}
-	
+
 	public static String GengouName(int gengou) {
 		String name = null;
 		if(gengou == 1) {
